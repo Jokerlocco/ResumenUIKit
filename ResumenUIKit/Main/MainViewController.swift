@@ -7,10 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     override func loadView() {
-        self.view = OnboardingView()
+        /*
+         Esta es la clase principal de esta app. Se debe de cambiar la siguiente línea con la view de la lección que se quiera cargar:
+         */
+        self.view = L6UIStackView()
     }
 
     override func viewDidLoad() {
