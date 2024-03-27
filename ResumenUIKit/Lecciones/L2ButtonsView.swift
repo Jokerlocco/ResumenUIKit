@@ -51,7 +51,7 @@ final class L2ButtonsView: UIView {
         return button
     }()
     
-    private lazy var button4: UIButton = { // Con Lazy hacemos que eso se inicialice cuando se tenga que usar (que es después de .self (la propia view), de esta forma, no petará al intentar acceder a la función de la acción.
+    private lazy var button4: UIButton = { // Con Lazy hacemos que eso se inicialice cuando se tenga que usar (que es después de .self (la propia view), de esta forma, no petará al intentar acceder a la función de la acción si todavia no ha sido creado.
         var configuration = UIButton.Configuration.bordered()
         configuration.title = "Suscríbete a SwiftBeta"
         configuration.titleAlignment = .center
@@ -62,11 +62,10 @@ final class L2ButtonsView: UIView {
         configuration.buttonSize = .large
         
         // Una forma distinta (con respecto a la clase de introducción) de añadir una acción al botón (sin depender de Objective-C):
-        let button = UIButton(type: .system, primaryAction: UIAction(handler: { _ in
+        let button = UIButton(configuration: configuration, primaryAction: UIAction(handler: { _ in
             self.showMessage()
         }))
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.configuration = configuration
         return button
     }()
     

@@ -30,14 +30,14 @@ final class L1IntroductionView: UIView { // Extendemos de UIView, porque esta cl
         return label
     }()
     
-    private lazy var skipOnboardingButton: UIButton = {
+    private lazy var skipOnboardingButton: UIButton = { // Con Lazy hacemos que eso se inicialice cuando se tenga que usar (que es después de .self (la propia view), de esta forma, no petará al intentar acceder a la función de la acción si todavia no ha sido creado.
         var config = UIButton.Configuration.filled()
         config.title = "Pulsa para continuar"
         config.subtitle = "onboarding"
         
         let button = UIButton(configuration: config)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(showMessage), for: .touchUpInside) // Veremos otra forma de incluir una acción a un botón. Esta "depende" de Objective-C.
+        button.addTarget(self, action: #selector(showMessage), for: .touchUpInside) // Veremos otra forma de incluir una acción a un botón. Esta "depende" de Objective-C, por lo que es menos recomendable.
         return button
     }()
     

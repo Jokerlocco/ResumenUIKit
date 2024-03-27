@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CF00BF542BA8722800F482EF /* L3UILabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00BF532BA8722800F482EF /* L3UILabelView.swift */; };
+		CF1928332BB46F6900D3056A /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1928322BB46F6900D3056A /* ViewControllerA.swift */; };
+		CF1928352BB4705700D3056A /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1928342BB4705700D3056A /* ViewControllerB.swift */; };
+		CF1928372BB4706100D3056A /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1928362BB4706100D3056A /* ViewControllerC.swift */; };
 		CF292C9F2BA25B740084F261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292C9E2BA25B740084F261 /* AppDelegate.swift */; };
 		CF292CA12BA25B740084F261 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292CA02BA25B740084F261 /* SceneDelegate.swift */; };
 		CF292CA32BA25B740084F261 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292CA22BA25B740084F261 /* MainViewController.swift */; };
@@ -47,6 +50,9 @@
 
 /* Begin PBXFileReference section */
 		CF00BF532BA8722800F482EF /* L3UILabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L3UILabelView.swift; sourceTree = "<group>"; };
+		CF1928322BB46F6900D3056A /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
+		CF1928342BB4705700D3056A /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		CF1928362BB4706100D3056A /* ViewControllerC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
 		CF292C9B2BA25B740084F261 /* ResumenUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumenUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF292C9E2BA25B740084F261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF292CA02BA25B740084F261 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +102,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF19282D2BB46E2B00D3056A /* L8 Navegacion modal */ = {
+			isa = PBXGroup;
+			children = (
+				CF1928322BB46F6900D3056A /* ViewControllerA.swift */,
+				CF1928342BB4705700D3056A /* ViewControllerB.swift */,
+				CF1928362BB4706100D3056A /* ViewControllerC.swift */,
+			);
+			name = "L8 Navegacion modal";
+			path = "L8 Navegación modal";
+			sourceTree = "<group>";
+		};
 		CF292C922BA25B740084F261 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +193,7 @@
 				CF6762442BB1D118008E7F25 /* L5UITableView y UITableViewCell */,
 				CF67624F2BB20142008E7F25 /* L6UIStackView.swift */,
 				CF96997E2BB4385F006569EC /* L7UICollectionView y UICollectionViewCell */,
+				CF19282D2BB46E2B00D3056A /* L8 Navegacion modal */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -322,7 +340,9 @@
 			files = (
 				CF292CA32BA25B740084F261 /* MainViewController.swift in Sources */,
 				CF6762502BB20142008E7F25 /* L6UIStackView.swift in Sources */,
+				CF1928372BB4706100D3056A /* ViewControllerC.swift in Sources */,
 				CFB4068D2BA5EFC100CAB303 /* L2ButtonsView.swift in Sources */,
+				CF1928332BB46F6900D3056A /* ViewControllerA.swift in Sources */,
 				CF9699802BB43897006569EC /* CustomCollectionViewCell.swift in Sources */,
 				CF00BF542BA8722800F482EF /* L3UILabelView.swift in Sources */,
 				CF6762482BB1D159008E7F25 /* Device.swift in Sources */,
@@ -331,6 +351,7 @@
 				CF48D20D2BB3459800432DE9 /* CollectionOfDevices.swift in Sources */,
 				CF940B352BA8EF2F006AE10A /* L4UIImageViewView.swift in Sources */,
 				CF6762462BB1D14B008E7F25 /* TableOfDevices.swift in Sources */,
+				CF1928352BB4705700D3056A /* ViewControllerB.swift in Sources */,
 				CF292C9F2BA25B740084F261 /* AppDelegate.swift in Sources */,
 				CF292CA12BA25B740084F261 /* SceneDelegate.swift in Sources */,
 			);
