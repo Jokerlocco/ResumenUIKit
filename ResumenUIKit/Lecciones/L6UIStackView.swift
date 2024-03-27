@@ -11,10 +11,10 @@ final class L6UIStackView: UIView {
     
     private let label1: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 32)
         label.text = "😀 In App Purchases 😀"
         label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -25,11 +25,11 @@ final class L6UIStackView: UIView {
      Nota: El propio StackView sí que requiere de constraints.
      */
     private let stackView1: UIStackView = {
-       let stackView = UIStackView()
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical // Los elementos que contenga el StackView, se colocaran de forma vertical. Por defecto, es horizontal
         stackView.spacing = 20
         stackView.alignment = .center
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
     

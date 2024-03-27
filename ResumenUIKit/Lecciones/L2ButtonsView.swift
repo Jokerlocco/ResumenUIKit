@@ -65,8 +65,8 @@ final class L2ButtonsView: UIView {
         let button = UIButton(type: .system, primaryAction: UIAction(handler: { _ in
             self.showMessage()
         }))
-        button.configuration = configuration
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.configuration = configuration
         return button
     }()
     

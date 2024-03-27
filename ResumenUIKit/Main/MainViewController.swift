@@ -13,13 +13,13 @@ class MainViewController: UIViewController {
         /*
          Esta es la clase principal de esta app. Se debe de cambiar la siguiente línea con la view de la lección que se quiera cargar:
          */
-        self.view = L6UIStackView()
+        self.view = CollectionOfDevices()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .darkGray
     }
 
 

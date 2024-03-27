@@ -11,22 +11,22 @@ final class L3UILabelView: UIView {
     
     private let label1: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Suscríbete a SwiftBeta"
         label.font = UIFont(name: "Arial Rounded MT Bold", size: 26)
         label.textAlignment = .center
         label.textColor = .purple
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let label2: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Aprende a programar Swift y SwiftUI. Crea apps en Xcode y súbelas a la App Store"
         label.font = .systemFont(ofSize: 12)
         label.textAlignment = .left
         label.textColor = .black
         label.numberOfLines = 0 // Líneas infinitas (hasta que se vea el texto por completo)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -42,9 +42,9 @@ final class L3UILabelView: UIView {
         let attributedString = NSAttributedString(string: text, attributes: attributedText)
         
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.attributedText = attributedString // Label con distintos atributos visuales
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     

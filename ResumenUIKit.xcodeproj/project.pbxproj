@@ -18,11 +18,13 @@
 		CF292CC02BA25B750084F261 /* ResumenUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292CBF2BA25B750084F261 /* ResumenUIKitUITests.swift */; };
 		CF292CC22BA25B750084F261 /* ResumenUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292CC12BA25B750084F261 /* ResumenUIKitUITestsLaunchTests.swift */; };
 		CF292CCF2BA25C170084F261 /* L1IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292CCE2BA25C170084F261 /* L1IntroductionView.swift */; };
+		CF48D20D2BB3459800432DE9 /* CollectionOfDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48D20C2BB3459800432DE9 /* CollectionOfDevices.swift */; };
 		CF6762462BB1D14B008E7F25 /* TableOfDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6762452BB1D14B008E7F25 /* TableOfDevices.swift */; };
 		CF6762482BB1D159008E7F25 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6762472BB1D159008E7F25 /* Device.swift */; };
 		CF67624A2BB1D2B3008E7F25 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6762492BB1D2B3008E7F25 /* CustomCell.swift */; };
 		CF6762502BB20142008E7F25 /* L6UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67624F2BB20142008E7F25 /* L6UIStackView.swift */; };
 		CF940B352BA8EF2F006AE10A /* L4UIImageViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940B342BA8EF2F006AE10A /* L4UIImageViewView.swift */; };
+		CF9699802BB43897006569EC /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96997F2BB43897006569EC /* CustomCollectionViewCell.swift */; };
 		CFB4068D2BA5EFC100CAB303 /* L2ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB4068C2BA5EFC100CAB303 /* L2ButtonsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,11 +61,13 @@
 		CF292CBF2BA25B750084F261 /* ResumenUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenUIKitUITests.swift; sourceTree = "<group>"; };
 		CF292CC12BA25B750084F261 /* ResumenUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CF292CCE2BA25C170084F261 /* L1IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1IntroductionView.swift; sourceTree = "<group>"; };
+		CF48D20C2BB3459800432DE9 /* CollectionOfDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOfDevices.swift; sourceTree = "<group>"; };
 		CF6762452BB1D14B008E7F25 /* TableOfDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOfDevices.swift; sourceTree = "<group>"; };
 		CF6762472BB1D159008E7F25 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		CF6762492BB1D2B3008E7F25 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		CF67624F2BB20142008E7F25 /* L6UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L6UIStackView.swift; sourceTree = "<group>"; };
 		CF940B342BA8EF2F006AE10A /* L4UIImageViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L4UIImageViewView.swift; sourceTree = "<group>"; };
+		CF96997F2BB43897006569EC /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		CFB4068C2BA5EFC100CAB303 /* L2ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L2ButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,14 +147,14 @@
 			path = ResumenUIKitUITests;
 			sourceTree = "<group>";
 		};
-		CF6762442BB1D118008E7F25 /* L5UITableView&UITableViewCell */ = {
+		CF6762442BB1D118008E7F25 /* L5UITableView y UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				CF6762452BB1D14B008E7F25 /* TableOfDevices.swift */,
 				CF6762472BB1D159008E7F25 /* Device.swift */,
 				CF6762492BB1D2B3008E7F25 /* CustomCell.swift */,
 			);
-			path = "L5UITableView&UITableViewCell";
+			path = "L5UITableView y UITableViewCell";
 			sourceTree = "<group>";
 		};
 		CF67624D2BB1FDE9008E7F25 /* Main */ = {
@@ -169,10 +173,20 @@
 				CFB4068C2BA5EFC100CAB303 /* L2ButtonsView.swift */,
 				CF00BF532BA8722800F482EF /* L3UILabelView.swift */,
 				CF940B342BA8EF2F006AE10A /* L4UIImageViewView.swift */,
-				CF6762442BB1D118008E7F25 /* L5UITableView&UITableViewCell */,
+				CF6762442BB1D118008E7F25 /* L5UITableView y UITableViewCell */,
 				CF67624F2BB20142008E7F25 /* L6UIStackView.swift */,
+				CF96997E2BB4385F006569EC /* L7UICollectionView y UICollectionViewCell */,
 			);
 			path = Lecciones;
+			sourceTree = "<group>";
+		};
+		CF96997E2BB4385F006569EC /* L7UICollectionView y UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CF48D20C2BB3459800432DE9 /* CollectionOfDevices.swift */,
+				CF96997F2BB43897006569EC /* CustomCollectionViewCell.swift */,
+			);
+			path = "L7UICollectionView y UICollectionViewCell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,10 +323,12 @@
 				CF292CA32BA25B740084F261 /* MainViewController.swift in Sources */,
 				CF6762502BB20142008E7F25 /* L6UIStackView.swift in Sources */,
 				CFB4068D2BA5EFC100CAB303 /* L2ButtonsView.swift in Sources */,
+				CF9699802BB43897006569EC /* CustomCollectionViewCell.swift in Sources */,
 				CF00BF542BA8722800F482EF /* L3UILabelView.swift in Sources */,
 				CF6762482BB1D159008E7F25 /* Device.swift in Sources */,
 				CF292CCF2BA25C170084F261 /* L1IntroductionView.swift in Sources */,
 				CF67624A2BB1D2B3008E7F25 /* CustomCell.swift in Sources */,
+				CF48D20D2BB3459800432DE9 /* CollectionOfDevices.swift in Sources */,
 				CF940B352BA8EF2F006AE10A /* L4UIImageViewView.swift in Sources */,
 				CF6762462BB1D14B008E7F25 /* TableOfDevices.swift in Sources */,
 				CF292C9F2BA25B740084F261 /* AppDelegate.swift in Sources */,

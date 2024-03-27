@@ -14,19 +14,19 @@ final class L1IntroductionView: UIView { // Extendemos de UIView, porque esta cl
     // Creamos la pantalla de forma programática utilizando closures:
     private let onboardingImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false // Indicamos que las constraints las configuraremos nosotros por código (y no por diseño visual (storyboards, .xibs)). Recomiendo coger la costumbre de poner esta línea justo debajo de la creación del elemento para evitar que se nos olvide ponerla.
         imageView.contentMode = .scaleAspectFit // Hacemos que se adapte al tamaño del width y height proporcionado en las constraints
         imageView.image = UIImage(named: "umbrella")
-        imageView.translatesAutoresizingMaskIntoConstraints = false // Indicamos que las constraints las configuraremos nosotros por código (y no por diseño visual (storyboards, .xibs))
         return imageView
     }()
     
     private let textLabel: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0 // Líneas infinitas (hasta que se pueda ver todo el texto, es decir, no pondrá puntos suspensivos en caso de que no quepa)
         label.textAlignment = .center
         label.text = "Bienvenido"
         label.font = UIFont(name: "Arial Rounded MT bold", size: 26)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -36,8 +36,8 @@ final class L1IntroductionView: UIView { // Extendemos de UIView, porque esta cl
         config.subtitle = "onboarding"
         
         let button = UIButton(configuration: config)
-        button.addTarget(self, action: #selector(showMessage), for: .touchUpInside) // Veremos otra forma de incluir una acción a un botón. Esta "depende" de Objective-C.
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(showMessage), for: .touchUpInside) // Veremos otra forma de incluir una acción a un botón. Esta "depende" de Objective-C.
         return button
     }()
     

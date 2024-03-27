@@ -23,7 +23,7 @@ private let house: [Device] = [
     Device(title: "Mac mini", imageName: "macmini"),
     Device(title: "Mac Pro", imageName: "macpro.gen3"),
     Device(title: "Pantallas", imageName: "display.2"),
-    Device(title: "Apple TV", imageName: "appletv"),
+    Device(title: "Apple TV", imageName: "appletv")
 ]
 
 private let work: [Device] = [
@@ -105,6 +105,7 @@ extension TableOfDevices: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell
         
+        // Nunca es rescomendable usar ! para desempaquetar una comprobación de nil, por lo tanto, haremos lo siguiente:
         if let reusableCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as? CustomCell {
             let model = allMyDevices[indexPath.section][indexPath.row] // Entramos a la sección correspondiente, y luego a la fila correspondiente de esa sección
             reusableCell.configure(model: model)

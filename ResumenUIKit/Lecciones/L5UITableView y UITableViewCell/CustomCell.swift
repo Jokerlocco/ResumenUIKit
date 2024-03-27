@@ -11,15 +11,15 @@ class CustomCell: UITableViewCell {
     
     private let deviceImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
     private let deviceNameLabel: UILabel =  {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 24)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 24)
         return label
     }()
     
