@@ -38,7 +38,7 @@ final class ViewControllerA: UIViewController { // En este caso, no usamos una V
     }
     
     private func presentViewControllerB() {
-        present(ViewControllerB(), animated: true)
+        present(ViewControllerB(), animated: true) // Presentamos el ViewControllerB por encima del A. Activamos la opción de animated para que la pantalla se presente con una animación más bonita.
     }
     
 }

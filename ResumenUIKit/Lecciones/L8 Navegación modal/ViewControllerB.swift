@@ -57,13 +57,16 @@ final class ViewControllerB: UIViewController {
     }
     
     private func presentViewControllerC() {
-        present(ViewControllerC(), animated: true) { // De esta forma, podemos ejecutar un completion cuando se presente la pantalla (en este caso, hacemos un print):
+        // Vamos a hacer el present de esta otra manera para poder aplicar un modalPresentationStyle:
+        let viewController = ViewControllerC()
+        viewController.modalPresentationStyle = .fullScreen // Esto hará que el ViewController ocupe toda la pantalla (lo que deshabilitará el gesto de arrastrar hacia abajo la view para hacer un dismiss). Es muy común utilizarlo.
+        present(viewController, animated: true) { // De esta forma, podemos ejecutar un completion cuando se presente la pantalla (en este caso, hacemos un print):
             print("ViewController C is presented")
         }
     }
     
     private func dismissViewControllerB() { // Los dismiss también tienen completions
-        dismiss(animated: true) {
+        dismiss(animated: true) { // Eliminamos el ViewControllerB que se había presentado por encima del A
             print("ViewController B is dismissed")
         }
     }

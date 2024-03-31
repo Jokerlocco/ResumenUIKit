@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  ResumenUIKit
 //
 //  Created by Gonzalo Arques on 13/3/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let totalNumberOfLessonsToLoad = 8
+private let totalNumberOfLessonsToLoad = 9
 
 class MainViewController: UIViewController {
     
@@ -77,6 +77,12 @@ class MainViewController: UIViewController {
             viewControllerBase.view = CollectionOfDevices()
         case 8:
             viewControllerBase = ViewControllerA()
+        case 9:
+            let storyboard = UIStoryboard(name: "UINavigationControllerLesson", bundle: nil) // No es necesario especificar el bundle si no tenemos otros en la app (ya que reconoce el único que hay).
+            if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
+                viewControllerBase = navigationController // Debemos de cargar el NavigationController (y no el ViewController raíz)
+            }
+
         default:
             viewControllerBase = UIViewController()
         }
