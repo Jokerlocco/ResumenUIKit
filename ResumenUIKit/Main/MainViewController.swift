@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let totalNumberOfLessonsToLoad = 9
+private let totalNumberOfLessonsToLoad = 10
 
 class MainViewController: UIViewController {
     
@@ -82,7 +82,8 @@ class MainViewController: UIViewController {
             if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
                 viewControllerBase = navigationController // Debemos de cargar el NavigationController (y no el ViewController raíz)
             }
-
+        case 10:
+            viewControllerBase = ViewControllerToPresentTheSheet()
         default:
             viewControllerBase = UIViewController()
         }

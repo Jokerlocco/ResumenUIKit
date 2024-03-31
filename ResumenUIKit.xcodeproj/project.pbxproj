@@ -14,6 +14,8 @@
 		CF23F2FB2BB97B71004B2757 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23F2FA2BB97B71004B2757 /* ViewController2.swift */; };
 		CF23F2FD2BB97BE4004B2757 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23F2FC2BB97BE4004B2757 /* ViewController3.swift */; };
 		CF23F2FF2BB97F33004B2757 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23F2FE2BB97F33004B2757 /* ViewController4.swift */; };
+		CF23F3012BB9846D004B2757 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23F3002BB9846D004B2757 /* SheetViewController.swift */; };
+		CF23F3042BB98A78004B2757 /* ViewControllerToPresentTheSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23F3032BB98A78004B2757 /* ViewControllerToPresentTheSheet.swift */; };
 		CF292C9F2BA25B740084F261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292C9E2BA25B740084F261 /* AppDelegate.swift */; };
 		CF292CA12BA25B740084F261 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292CA02BA25B740084F261 /* SceneDelegate.swift */; };
 		CF292CA32BA25B740084F261 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292CA22BA25B740084F261 /* MainViewController.swift */; };
@@ -61,6 +63,8 @@
 		CF23F2FA2BB97B71004B2757 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		CF23F2FC2BB97BE4004B2757 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		CF23F2FE2BB97F33004B2757 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		CF23F3002BB9846D004B2757 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
+		CF23F3032BB98A78004B2757 /* ViewControllerToPresentTheSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerToPresentTheSheet.swift; sourceTree = "<group>"; };
 		CF292C9B2BA25B740084F261 /* ResumenUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumenUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF292C9E2BA25B740084F261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF292CA02BA25B740084F261 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,15 @@
 			);
 			name = "L8 Navegacion modal (Presents)";
 			path = "L8 Navegación modal";
+			sourceTree = "<group>";
+		};
+		CF23F3022BB9854A004B2757 /* L10 UISheetPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				CF23F3032BB98A78004B2757 /* ViewControllerToPresentTheSheet.swift */,
+				CF23F3002BB9846D004B2757 /* SheetViewController.swift */,
+			);
+			path = "L10 UISheetPresentationController";
 			sourceTree = "<group>";
 		};
 		CF292C922BA25B740084F261 = {
@@ -205,6 +218,7 @@
 				CF96997E2BB4385F006569EC /* L7UICollectionView y UICollectionViewCell */,
 				CF19282D2BB46E2B00D3056A /* L8 Navegacion modal (Presents) */,
 				CFA3A9262BB6E6B700B7330E /* L9 Navigacion push (UINavigationController) */,
+				CF23F3022BB9854A004B2757 /* L10 UISheetPresentationController */,
 			);
 			path = Lecciones;
 			sourceTree = "<group>";
@@ -377,10 +391,12 @@
 				CF23F2FB2BB97B71004B2757 /* ViewController2.swift in Sources */,
 				CF48D20D2BB3459800432DE9 /* CollectionOfDevices.swift in Sources */,
 				CF940B352BA8EF2F006AE10A /* L4UIImageViewView.swift in Sources */,
+				CF23F3042BB98A78004B2757 /* ViewControllerToPresentTheSheet.swift in Sources */,
 				CF6762462BB1D14B008E7F25 /* TableOfDevices.swift in Sources */,
 				CF1928352BB4705700D3056A /* ViewControllerB.swift in Sources */,
 				CF292C9F2BA25B740084F261 /* AppDelegate.swift in Sources */,
 				CF292CA12BA25B740084F261 /* SceneDelegate.swift in Sources */,
+				CF23F3012BB9846D004B2757 /* SheetViewController.swift in Sources */,
 				CF23F2FF2BB97F33004B2757 /* ViewController4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
