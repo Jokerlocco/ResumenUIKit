@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let totalNumberOfLessonsToLoad = 10
+private let totalNumberOfLessonsToLoad = 11
 
 class MainViewController: UIViewController {
     
@@ -84,6 +84,8 @@ class MainViewController: UIViewController {
             }
         case 10:
             viewControllerBase = ViewControllerToPresentTheSheet()
+        case 11:
+            viewControllerBase.view = L11ModernUICollectionView()
         default:
             viewControllerBase = UIViewController()
         }
