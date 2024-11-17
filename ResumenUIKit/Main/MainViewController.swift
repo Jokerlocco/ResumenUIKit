@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let totalNumberOfLessonsToLoad = 11
+private let totalNumberOfLessonsToLoad = 12
 
 class MainViewController: UIViewController {
     
@@ -86,6 +86,8 @@ class MainViewController: UIViewController {
             viewControllerBase = ViewControllerToPresentTheSheet()
         case 11:
             viewControllerBase.view = L11ModernUICollectionView()
+        case 12:
+            viewControllerBase.view = RandomPokemonNameView()
         default:
             viewControllerBase = UIViewController()
         }

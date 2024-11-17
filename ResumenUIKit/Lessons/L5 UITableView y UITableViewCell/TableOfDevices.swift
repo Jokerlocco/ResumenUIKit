@@ -8,14 +8,20 @@
 import UIKit
 
 /*
- Curiosidad:
+ Anotación:
  Esta clase "TableOfDevices" está destinada a la configuración visual de la tabla, y sus extensiones adicionales,
  se encargan de la lógica específica de la tabla, como la configuración de las secciones, las filas y las acciones del usuario.
  Es decir, se trata de una clase que representa una vista (View).
-
  Si estuvieramos en una app con una arquitectura de diseño implementada (MVC, MVP, etc), las variables de datos que definimos a
  continuación (house, work y allMyDevices) no deberían de estar en esta clase.
  Pero para no complicar la explicación, nos centraremos en la creación de la tabla y ya, así que, las incluimos en esta misma clase.
+ 
+ Curiosidad:
+ Con UIKit, el incluir un scroll a una pantalla, suele ser bastante molesto y complicado, aparte de que suele generar problemas.
+ Por esto mismo, muchos desarrolladores deciden (y recomiendan) usar tablas para construir pantallas, ya que, tienen su propio scroll integrado.
+ Básicamente lo que hacen, es crear unas celdas para cada elemento visual (a modo de componentes encapuslados en celdas), y estas,
+ se cargan en la tabla. Esto también ayuda a la reutilización de esa celda en otras pantallas, y el poder enfocarse en cada una de ellas individualmente.
+ También suelen incluir un stackView en la parte superior e inferior (y la tabla en medio) para hacer de header y de footer (si se requiere).
  */
 
 private let house: [Device] = [

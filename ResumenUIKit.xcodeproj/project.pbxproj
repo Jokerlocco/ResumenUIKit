@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF00BF542BA8722800F482EF /* L3UILabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00BF532BA8722800F482EF /* L3UILabelView.swift */; };
+		CF017F3A2BBB0D71009107DF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF017F392BBB0D71009107DF /* APIClient.swift */; };
 		CF1928332BB46F6900D3056A /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1928322BB46F6900D3056A /* ViewControllerA.swift */; };
 		CF1928352BB4705700D3056A /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1928342BB4705700D3056A /* ViewControllerB.swift */; };
 		CF1928372BB4706100D3056A /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1928362BB4706100D3056A /* ViewControllerC.swift */; };
@@ -26,7 +27,9 @@
 		CF292CC02BA25B750084F261 /* ResumenUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292CBF2BA25B750084F261 /* ResumenUIKitUITests.swift */; };
 		CF292CC22BA25B750084F261 /* ResumenUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292CC12BA25B750084F261 /* ResumenUIKitUITestsLaunchTests.swift */; };
 		CF292CCF2BA25C170084F261 /* L1IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF292CCE2BA25C170084F261 /* L1IntroductionView.swift */; };
+		CF2DF06A2BBB49BE00FCC89C /* RandomPokemonNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DF0692BBB49BE00FCC89C /* RandomPokemonNameView.swift */; };
 		CF48D20D2BB3459800432DE9 /* CollectionOfDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48D20C2BB3459800432DE9 /* CollectionOfDevices.swift */; };
+		CF4ED8EC2BFFEFAC002025B5 /* TableViewTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4ED8EB2BFFEFAC002025B5 /* TableViewTemplateView.swift */; };
 		CF5714282BBACD81006AFB70 /* L11ModernUICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5714272BBACD81006AFB70 /* L11ModernUICollectionView.swift */; };
 		CF6762462BB1D14B008E7F25 /* TableOfDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6762452BB1D14B008E7F25 /* TableOfDevices.swift */; };
 		CF6762482BB1D159008E7F25 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6762472BB1D159008E7F25 /* Device.swift */; };
@@ -58,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		CF00BF532BA8722800F482EF /* L3UILabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L3UILabelView.swift; sourceTree = "<group>"; };
+		CF017F392BBB0D71009107DF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		CF1928322BB46F6900D3056A /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		CF1928342BB4705700D3056A /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
 		CF1928362BB4706100D3056A /* ViewControllerC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
@@ -80,7 +84,9 @@
 		CF292CBF2BA25B750084F261 /* ResumenUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenUIKitUITests.swift; sourceTree = "<group>"; };
 		CF292CC12BA25B750084F261 /* ResumenUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CF292CCE2BA25C170084F261 /* L1IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1IntroductionView.swift; sourceTree = "<group>"; };
+		CF2DF0692BBB49BE00FCC89C /* RandomPokemonNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPokemonNameView.swift; sourceTree = "<group>"; };
 		CF48D20C2BB3459800432DE9 /* CollectionOfDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOfDevices.swift; sourceTree = "<group>"; };
+		CF4ED8EB2BFFEFAC002025B5 /* TableViewTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTemplateView.swift; sourceTree = "<group>"; };
 		CF5714272BBACD81006AFB70 /* L11ModernUICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L11ModernUICollectionView.swift; sourceTree = "<group>"; };
 		CF6762452BB1D14B008E7F25 /* TableOfDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOfDevices.swift; sourceTree = "<group>"; };
 		CF6762472BB1D159008E7F25 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
@@ -118,6 +124,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF017F382BBB076B009107DF /* L12 Delegation Pattern (and Retain Cycle) */ = {
+			isa = PBXGroup;
+			children = (
+				CF2DF0692BBB49BE00FCC89C /* RandomPokemonNameView.swift */,
+				CF017F392BBB0D71009107DF /* APIClient.swift */,
+			);
+			path = "L12 Delegation Pattern (and Retain Cycle)";
+			sourceTree = "<group>";
+		};
 		CF19282D2BB46E2B00D3056A /* L8 Navegacion modal (Presents) */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +183,7 @@
 				CF292CAC2BA25B740084F261 /* Info.plist */,
 				CF67624D2BB1FDE9008E7F25 /* Main */,
 				CF67624E2BB1FE12008E7F25 /* Lessons */,
+				CF4ED8EA2BFFEF62002025B5 /* Utils */,
 			);
 			path = ResumenUIKit;
 			sourceTree = "<group>";
@@ -189,14 +205,22 @@
 			path = ResumenUIKitUITests;
 			sourceTree = "<group>";
 		};
-		CF6762442BB1D118008E7F25 /* L5UITableView y UITableViewCell */ = {
+		CF4ED8EA2BFFEF62002025B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF4ED8EB2BFFEFAC002025B5 /* TableViewTemplateView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CF6762442BB1D118008E7F25 /* L5 UITableView y UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				CF6762452BB1D14B008E7F25 /* TableOfDevices.swift */,
 				CF6762472BB1D159008E7F25 /* Device.swift */,
 				CF6762492BB1D2B3008E7F25 /* CustomCell.swift */,
 			);
-			path = "L5UITableView y UITableViewCell";
+			path = "L5 UITableView y UITableViewCell";
 			sourceTree = "<group>";
 		};
 		CF67624D2BB1FDE9008E7F25 /* Main */ = {
@@ -215,24 +239,25 @@
 				CFB4068C2BA5EFC100CAB303 /* L2ButtonsView.swift */,
 				CF00BF532BA8722800F482EF /* L3UILabelView.swift */,
 				CF940B342BA8EF2F006AE10A /* L4UIImageViewView.swift */,
-				CF6762442BB1D118008E7F25 /* L5UITableView y UITableViewCell */,
+				CF6762442BB1D118008E7F25 /* L5 UITableView y UITableViewCell */,
 				CF67624F2BB20142008E7F25 /* L6UIStackView.swift */,
-				CF96997E2BB4385F006569EC /* L7UICollectionView and UICollectionViewCell */,
+				CF96997E2BB4385F006569EC /* L7 UICollectionView and UICollectionViewCell */,
 				CF19282D2BB46E2B00D3056A /* L8 Navegacion modal (Presents) */,
 				CFA3A9262BB6E6B700B7330E /* L9 Navigacion push (UINavigationController) */,
 				CF23F3022BB9854A004B2757 /* L10 UISheetPresentationController */,
 				CF5714272BBACD81006AFB70 /* L11ModernUICollectionView.swift */,
+				CF017F382BBB076B009107DF /* L12 Delegation Pattern (and Retain Cycle) */,
 			);
 			path = Lessons;
 			sourceTree = "<group>";
 		};
-		CF96997E2BB4385F006569EC /* L7UICollectionView and UICollectionViewCell */ = {
+		CF96997E2BB4385F006569EC /* L7 UICollectionView and UICollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				CF48D20C2BB3459800432DE9 /* CollectionOfDevices.swift */,
 				CF96997F2BB43897006569EC /* CustomCollectionViewCell.swift */,
 			);
-			path = "L7UICollectionView and UICollectionViewCell";
+			path = "L7 UICollectionView and UICollectionViewCell";
 			sourceTree = "<group>";
 		};
 		CFA3A9262BB6E6B700B7330E /* L9 Navigacion push (UINavigationController) */ = {
@@ -379,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2DF06A2BBB49BE00FCC89C /* RandomPokemonNameView.swift in Sources */,
 				CF5714282BBACD81006AFB70 /* L11ModernUICollectionView.swift in Sources */,
 				CF292CA32BA25B740084F261 /* MainViewController.swift in Sources */,
 				CF6762502BB20142008E7F25 /* L6UIStackView.swift in Sources */,
@@ -392,8 +418,10 @@
 				CF292CCF2BA25C170084F261 /* L1IntroductionView.swift in Sources */,
 				CF23F2FD2BB97BE4004B2757 /* ViewController3.swift in Sources */,
 				CF67624A2BB1D2B3008E7F25 /* CustomCell.swift in Sources */,
+				CF017F3A2BBB0D71009107DF /* APIClient.swift in Sources */,
 				CF23F2FB2BB97B71004B2757 /* ViewController2.swift in Sources */,
 				CF48D20D2BB3459800432DE9 /* CollectionOfDevices.swift in Sources */,
+				CF4ED8EC2BFFEFAC002025B5 /* TableViewTemplateView.swift in Sources */,
 				CF940B352BA8EF2F006AE10A /* L4UIImageViewView.swift in Sources */,
 				CF23F3042BB98A78004B2757 /* ViewControllerToPresentTheSheet.swift in Sources */,
 				CF6762462BB1D14B008E7F25 /* TableOfDevices.swift in Sources */,

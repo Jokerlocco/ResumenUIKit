@@ -98,7 +98,7 @@ final class L11ModernUICollectionView: UIView {
         
         
         // Como curiosidad, vamos a simular que se añaden más elementos (3) al CollectionView después de dos segundos.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { // Con el DispatchQueue podemos ejecutar una tarea después de un tiempo determinado en la hilo/cola principal de la app. En este caso, dos segundos.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { // Con el DispatchQueue podemos ejecutar una tarea después de un tiempo determinado en la hilo/cola principal de la app (que es el que controla la modificación de la interfaz visual). En este caso, dos segundos.
             // Tras los dos segundos, vamos a añadir más items al snapshot (sección 0), y reflejarlo en el dataSource del CollectionView:
             snapshot.appendItems(
                 [
