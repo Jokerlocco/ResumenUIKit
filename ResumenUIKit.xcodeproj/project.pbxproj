@@ -12,6 +12,8 @@
 		CF1928332BB46F6900D3056A /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1928322BB46F6900D3056A /* ViewControllerA.swift */; };
 		CF1928352BB4705700D3056A /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1928342BB4705700D3056A /* ViewControllerB.swift */; };
 		CF1928372BB4706100D3056A /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1928362BB4706100D3056A /* ViewControllerC.swift */; };
+		CF20C2F02D456C950020D029 /* PresentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF20C2EF2D456C950020D029 /* PresentStoryboard.storyboard */; };
+		CF20C2F22D456CB50020D029 /* PresentStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF20C2F12D456CB50020D029 /* PresentStoryboardViewController.swift */; };
 		CF23F2FB2BB97B71004B2757 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23F2FA2BB97B71004B2757 /* ViewController2.swift */; };
 		CF23F2FD2BB97BE4004B2757 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23F2FC2BB97BE4004B2757 /* ViewController3.swift */; };
 		CF23F2FF2BB97F33004B2757 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23F2FE2BB97F33004B2757 /* ViewController4.swift */; };
@@ -65,6 +67,8 @@
 		CF1928322BB46F6900D3056A /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		CF1928342BB4705700D3056A /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
 		CF1928362BB4706100D3056A /* ViewControllerC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
+		CF20C2EF2D456C950020D029 /* PresentStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PresentStoryboard.storyboard; sourceTree = "<group>"; };
+		CF20C2F12D456CB50020D029 /* PresentStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentStoryboardViewController.swift; sourceTree = "<group>"; };
 		CF23F2FA2BB97B71004B2757 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		CF23F2FC2BB97BE4004B2757 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		CF23F2FE2BB97F33004B2757 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
@@ -136,12 +140,22 @@
 		CF19282D2BB46E2B00D3056A /* L8 Navegacion modal (Presents) */ = {
 			isa = PBXGroup;
 			children = (
+				CF20C2EE2D456C000020D029 /* Present Storyboard */,
 				CF1928322BB46F6900D3056A /* ViewControllerA.swift */,
 				CF1928342BB4705700D3056A /* ViewControllerB.swift */,
 				CF1928362BB4706100D3056A /* ViewControllerC.swift */,
 			);
 			name = "L8 Navegacion modal (Presents)";
 			path = "L8 Navegación modal";
+			sourceTree = "<group>";
+		};
+		CF20C2EE2D456C000020D029 /* Present Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CF20C2EF2D456C950020D029 /* PresentStoryboard.storyboard */,
+				CF20C2F12D456CB50020D029 /* PresentStoryboardViewController.swift */,
+			);
+			path = "Present Storyboard";
 			sourceTree = "<group>";
 		};
 		CF23F3022BB9854A004B2757 /* L10 UISheetPresentationController */ = {
@@ -380,6 +394,7 @@
 				CF292CAB2BA25B740084F261 /* LaunchScreen.storyboard in Resources */,
 				CF292CA82BA25B740084F261 /* Assets.xcassets in Resources */,
 				CF292CA62BA25B740084F261 /* Main.storyboard in Resources */,
+				CF20C2F02D456C950020D029 /* PresentStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +442,7 @@
 				CF6762462BB1D14B008E7F25 /* TableOfDevices.swift in Sources */,
 				CF1928352BB4705700D3056A /* ViewControllerB.swift in Sources */,
 				CF292C9F2BA25B740084F261 /* AppDelegate.swift in Sources */,
+				CF20C2F22D456CB50020D029 /* PresentStoryboardViewController.swift in Sources */,
 				CF292CA12BA25B740084F261 /* SceneDelegate.swift in Sources */,
 				CF23F3012BB9846D004B2757 /* SheetViewController.swift in Sources */,
 				CF23F2FF2BB97F33004B2757 /* ViewController4.swift in Sources */,
