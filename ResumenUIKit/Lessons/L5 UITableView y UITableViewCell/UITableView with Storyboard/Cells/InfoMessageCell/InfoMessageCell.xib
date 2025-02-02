@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="6Fj-Ze-Ean" customClass="InfoMessageCell" customModule="Tabla_Con_Componentes_Encapsulados_UIKIT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Fj-Ze-Ean" id="YC4-fJ-bMu">
+                <rect key="frame" x="0.0" y="0.0" width="456" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAq-we-k9F">
+                        <rect key="frame" x="0.0" y="0.0" width="456" height="200"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8E-38-vqN">
+                                <rect key="frame" x="10" y="8" width="436" height="182.66666666666666"/>
+                                <string key="text">_'La Sustancia' es la historia de 'Elisabeth Sparkle', interpretada por Demi Moore, una actriz en decadencia que comienza a tomar una droga del mercado negro para crear la mejor versión de sí misma.
+La misteriosa sustancia que empieza a consumir se encarga de replicar las células y brindarle juventud y vitalidad. Esta versión es 'Sue', interpretada por Margaret Qualley, una joven que piensa recuperar la gloria de 'Sparkles'.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="g8E-38-vqN" secondAttribute="trailing" constant="10" id="YU3-gF-GZM"/>
+                            <constraint firstItem="g8E-38-vqN" firstAttribute="top" secondItem="hAq-we-k9F" secondAttribute="top" constant="8" id="m7Y-BB-us1"/>
+                            <constraint firstItem="g8E-38-vqN" firstAttribute="leading" secondItem="hAq-we-k9F" secondAttribute="leading" constant="10" id="ziu-JL-ZIp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hAq-we-k9F" firstAttribute="leading" secondItem="YC4-fJ-bMu" secondAttribute="leading" id="4k7-Wo-BhL"/>
+                    <constraint firstAttribute="bottom" secondItem="hAq-we-k9F" secondAttribute="bottom" id="Syn-LM-MnR"/>
+                    <constraint firstItem="hAq-we-k9F" firstAttribute="top" secondItem="YC4-fJ-bMu" secondAttribute="top" id="hhp-7r-vWg"/>
+                    <constraint firstAttribute="trailing" secondItem="hAq-we-k9F" secondAttribute="trailing" id="z1h-nU-tEK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoMessageLabel" destination="g8E-38-vqN" id="Si2-N6-Wls"/>
+            </connections>
+            <point key="canvasLocation" x="132.82442748091603" y="74.647887323943664"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

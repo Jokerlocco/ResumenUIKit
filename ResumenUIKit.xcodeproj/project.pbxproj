@@ -42,6 +42,10 @@
 		CFA3A9252BB6E6B300B7330E /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA3A9242BB6E6B300B7330E /* ViewController1.swift */; };
 		CFA3A92A2BB6E9C900B7330E /* UINavigationControllerLesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA3A9292BB6E9C900B7330E /* UINavigationControllerLesson.storyboard */; };
 		CFB4068D2BA5EFC100CAB303 /* L2ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB4068C2BA5EFC100CAB303 /* L2ButtonsView.swift */; };
+		CFC505612D4FA753009550CC /* TableViewWithStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC505602D4FA753009550CC /* TableViewWithStoryboard.storyboard */; };
+		CFC505672D4FA7C0009550CC /* InfoMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC505642D4FA7C0009550CC /* InfoMessageCell.swift */; };
+		CFC505682D4FA7C0009550CC /* InfoMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC505652D4FA7C0009550CC /* InfoMessageCell.xib */; };
+		CFC5056A2D4FA7F6009550CC /* TableViewWithStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC505692D4FA7F6009550CC /* TableViewWithStoryboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +105,10 @@
 		CFA3A9242BB6E6B300B7330E /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		CFA3A9292BB6E9C900B7330E /* UINavigationControllerLesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UINavigationControllerLesson.storyboard; sourceTree = "<group>"; };
 		CFB4068C2BA5EFC100CAB303 /* L2ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L2ButtonsView.swift; sourceTree = "<group>"; };
+		CFC505602D4FA753009550CC /* TableViewWithStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewWithStoryboard.storyboard; sourceTree = "<group>"; };
+		CFC505642D4FA7C0009550CC /* InfoMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMessageCell.swift; sourceTree = "<group>"; };
+		CFC505652D4FA7C0009550CC /* InfoMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoMessageCell.xib; sourceTree = "<group>"; };
+		CFC505692D4FA7F6009550CC /* TableViewWithStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWithStoryboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +241,7 @@
 				CF6762452BB1D14B008E7F25 /* TableOfDevices.swift */,
 				CF6762472BB1D159008E7F25 /* Device.swift */,
 				CF6762492BB1D2B3008E7F25 /* CustomCell.swift */,
+				CFC5055F2D4FA6E7009550CC /* UITableView with Storyboard */,
 			);
 			path = "L5 UITableView y UITableViewCell";
 			sourceTree = "<group>";
@@ -284,6 +293,49 @@
 				CF23F2FE2BB97F33004B2757 /* ViewController4.swift */,
 			);
 			path = "L9 Navigacion push (UINavigationController)";
+			sourceTree = "<group>";
+		};
+		CFC5055F2D4FA6E7009550CC /* UITableView with Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5056B2D4FAA73009550CC /* Controller */,
+				CFC505632D4FA793009550CC /* Cells */,
+				CFC505622D4FA78C009550CC /* UI */,
+			);
+			path = "UITableView with Storyboard";
+			sourceTree = "<group>";
+		};
+		CFC505622D4FA78C009550CC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CFC505602D4FA753009550CC /* TableViewWithStoryboard.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CFC505632D4FA793009550CC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CFC505662D4FA7C0009550CC /* InfoMessageCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CFC505662D4FA7C0009550CC /* InfoMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				CFC505642D4FA7C0009550CC /* InfoMessageCell.swift */,
+				CFC505652D4FA7C0009550CC /* InfoMessageCell.xib */,
+			);
+			path = InfoMessageCell;
+			sourceTree = "<group>";
+		};
+		CFC5056B2D4FAA73009550CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFC505692D4FA7F6009550CC /* TableViewWithStoryboardViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +447,8 @@
 				CF292CA82BA25B740084F261 /* Assets.xcassets in Resources */,
 				CF292CA62BA25B740084F261 /* Main.storyboard in Resources */,
 				CF20C2F02D456C950020D029 /* PresentStoryboard.storyboard in Resources */,
+				CFC505612D4FA753009550CC /* TableViewWithStoryboard.storyboard in Resources */,
+				CFC505682D4FA7C0009550CC /* InfoMessageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +482,8 @@
 				CF1928332BB46F6900D3056A /* ViewControllerA.swift in Sources */,
 				CFA3A9252BB6E6B300B7330E /* ViewController1.swift in Sources */,
 				CF9699802BB43897006569EC /* CustomCollectionViewCell.swift in Sources */,
+				CFC505672D4FA7C0009550CC /* InfoMessageCell.swift in Sources */,
+				CFC5056A2D4FA7F6009550CC /* TableViewWithStoryboardViewController.swift in Sources */,
 				CF00BF542BA8722800F482EF /* L3UILabelView.swift in Sources */,
 				CF6762482BB1D159008E7F25 /* Device.swift in Sources */,
 				CF292CCF2BA25C170084F261 /* L1IntroductionView.swift in Sources */,

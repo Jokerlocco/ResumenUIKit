@@ -70,7 +70,17 @@ class MainViewController: UIViewController {
         case 4:
             viewControllerBase.view = L4UIImageViewView()
         case 5:
+            // Lanzamos por código:
             viewControllerBase.view = TableOfDevices()
+            
+            // Lanzamos con storyboard (hay que poner el nombre exacto del storyboard, y el storyboard ID que se haya indicado en el mismo:
+            /*
+            if let viewController = UIStoryboard(name: "TableViewWithStoryboard", bundle: nil).instantiateViewController(withIdentifier: "TableViewWithStoryboardViewController") as? TableViewWithStoryboardViewController {
+                viewController.modalPresentationStyle = .fullScreen
+                present(viewController, animated: true)
+            }
+            */
+             
         case 6:
             viewControllerBase.view = L6UIStackView()
         case 7:
@@ -78,9 +88,9 @@ class MainViewController: UIViewController {
         case 8:
             viewControllerBase = ViewControllerA()
         case 9:
-            let storyboard = UIStoryboard(name: "UINavigationControllerLesson", bundle: nil) // No es necesario especificar el bundle si no tenemos otros en la app (ya que reconoce el único que hay).
+            let storyboard = UIStoryboard(name: "UINavigationControllerLesson", bundle: nil)
             if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
-                viewControllerBase = navigationController // Debemos de cargar el NavigationController (y no el ViewController raíz)
+                viewControllerBase = navigationController
             }
         case 10:
             viewControllerBase = ViewControllerToPresentTheSheet()
