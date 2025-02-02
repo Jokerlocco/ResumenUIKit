@@ -33,6 +33,8 @@
 		CF48D20D2BB3459800432DE9 /* CollectionOfDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48D20C2BB3459800432DE9 /* CollectionOfDevices.swift */; };
 		CF4ED8EC2BFFEFAC002025B5 /* TableViewTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4ED8EB2BFFEFAC002025B5 /* TableViewTemplateView.swift */; };
 		CF5714282BBACD81006AFB70 /* L11ModernUICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5714272BBACD81006AFB70 /* L11ModernUICollectionView.swift */; };
+		CF65A6FD2D4FC02000722CD8 /* ButtonFillView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF65A6FA2D4FC02000722CD8 /* ButtonFillView.xib */; };
+		CF65A6FE2D4FC02000722CD8 /* ButtonFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65A6F92D4FC02000722CD8 /* ButtonFillView.swift */; };
 		CF6762462BB1D14B008E7F25 /* TableOfDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6762452BB1D14B008E7F25 /* TableOfDevices.swift */; };
 		CF6762482BB1D159008E7F25 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6762472BB1D159008E7F25 /* Device.swift */; };
 		CF67624A2BB1D2B3008E7F25 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6762492BB1D2B3008E7F25 /* CustomCell.swift */; };
@@ -96,6 +98,8 @@
 		CF48D20C2BB3459800432DE9 /* CollectionOfDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOfDevices.swift; sourceTree = "<group>"; };
 		CF4ED8EB2BFFEFAC002025B5 /* TableViewTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTemplateView.swift; sourceTree = "<group>"; };
 		CF5714272BBACD81006AFB70 /* L11ModernUICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L11ModernUICollectionView.swift; sourceTree = "<group>"; };
+		CF65A6F92D4FC02000722CD8 /* ButtonFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFillView.swift; sourceTree = "<group>"; };
+		CF65A6FA2D4FC02000722CD8 /* ButtonFillView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonFillView.xib; sourceTree = "<group>"; };
 		CF6762452BB1D14B008E7F25 /* TableOfDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOfDevices.swift; sourceTree = "<group>"; };
 		CF6762472BB1D159008E7F25 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		CF6762492BB1D2B3008E7F25 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -235,6 +239,23 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		CF65A6FB2D4FC02000722CD8 /* ButtonFillView */ = {
+			isa = PBXGroup;
+			children = (
+				CF65A6F92D4FC02000722CD8 /* ButtonFillView.swift */,
+				CF65A6FA2D4FC02000722CD8 /* ButtonFillView.xib */,
+			);
+			path = ButtonFillView;
+			sourceTree = "<group>";
+		};
+		CF65A6FC2D4FC02000722CD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF65A6FB2D4FC02000722CD8 /* ButtonFillView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CF6762442BB1D118008E7F25 /* L5 UITableView y UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +319,7 @@
 		CFC5055F2D4FA6E7009550CC /* UITableView with Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				CF65A6FC2D4FC02000722CD8 /* Views */,
 				CFC5056B2D4FAA73009550CC /* Controller */,
 				CFC505632D4FA793009550CC /* Cells */,
 				CFC505622D4FA78C009550CC /* UI */,
@@ -443,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA3A92A2BB6E9C900B7330E /* UINavigationControllerLesson.storyboard in Resources */,
+				CF65A6FD2D4FC02000722CD8 /* ButtonFillView.xib in Resources */,
 				CF292CAB2BA25B740084F261 /* LaunchScreen.storyboard in Resources */,
 				CF292CA82BA25B740084F261 /* Assets.xcassets in Resources */,
 				CF292CA62BA25B740084F261 /* Main.storyboard in Resources */,
@@ -496,6 +519,7 @@
 				CF940B352BA8EF2F006AE10A /* L4UIImageViewView.swift in Sources */,
 				CF23F3042BB98A78004B2757 /* ViewControllerToPresentTheSheet.swift in Sources */,
 				CF6762462BB1D14B008E7F25 /* TableOfDevices.swift in Sources */,
+				CF65A6FE2D4FC02000722CD8 /* ButtonFillView.swift in Sources */,
 				CF1928352BB4705700D3056A /* ViewControllerB.swift in Sources */,
 				CF292C9F2BA25B740084F261 /* AppDelegate.swift in Sources */,
 				CF20C2F22D456CB50020D029 /* PresentStoryboardViewController.swift in Sources */,

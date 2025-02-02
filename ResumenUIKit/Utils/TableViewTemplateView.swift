@@ -64,7 +64,7 @@ extension TableViewTemplateView: UITableViewDataSource {
         var cell: UITableViewCell
         
         if let reusableCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as? CustomCell {
-            let model = dataArray[indexPath.row]
+            let _ = dataArray[indexPath.row]
             cell = reusableCell
         }
         else {

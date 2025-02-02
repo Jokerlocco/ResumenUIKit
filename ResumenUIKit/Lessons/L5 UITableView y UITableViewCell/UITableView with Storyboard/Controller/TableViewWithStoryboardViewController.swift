@@ -11,6 +11,7 @@ class TableViewWithStoryboardViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var buttonFillView: ButtonFillView! // También podemos añadir una UIView justo debajo de la tabla si se requiere
     
     // MARK: - Variables
     private var allContentDataOfCells: [Any] = []
@@ -26,6 +27,7 @@ class TableViewWithStoryboardViewController: UIViewController {
     // MARK: - SetupUI
     private func setupUI() {
         configureTableView()
+        configureButtonFillView()
     }
     
 }
@@ -52,7 +54,7 @@ extension TableViewWithStoryboardViewController: UITableViewDelegate, UITableVie
         
         // Regitrar una celda creada por código
         // tableView.register(ItemListCell.self, forCellReuseIdentifier: ListOfCellIDs.itemListCellID)
-
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -82,6 +84,25 @@ extension TableViewWithStoryboardViewController: UITableViewDelegate, UITableVie
         }
         
         return UITableViewCell()
+    }
+    
+}
+
+// MARK: - UIViews configuration methods
+extension TableViewWithStoryboardViewController {
+    
+    private func configureButtonFillView() {
+        buttonFillView.delegate = self
+        buttonFillView.button.setTitle("OK", for: .normal)
+    }
+    
+}
+
+// MARK: - ButtonFillViewDelegate
+extension TableViewWithStoryboardViewController: ButtonFillViewDelegate {
+    
+    internal func buttonDidTapped(_ sender: ButtonFillView) {
+        print("¡El botón ha sido presionado!")
     }
     
 }
